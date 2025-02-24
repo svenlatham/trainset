@@ -9,5 +9,5 @@ ch3 = RedGreenSignal('CH3', 20, 21)
 ch4 = RedGreenSignal('CH4', 15, 14)
 ch5 = RedGreenSignal('CH5', 13, 12)
 
-RedGreenSignal.setAllRed([ch1, ch2, ch3, ch4, ch5])
+BaseSignal.testAll([ch1, ch2, ch3, ch4, ch5])
 

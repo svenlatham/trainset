@@ -95,19 +95,8 @@ class RedGreenSignal(BaseSignal):
 
 
     def test(self):
-        from time import sleep
-        original_state = self.state
-        # Don't use the methods since we don't care about warnings now
-        self.state = self.RED
-        self.setLeds()
-        self.logInfo("set to RED for test")
-        sleep(1)
-        self.state = self.GREEN
-        self.setLeds()
-        self.logInfo("set to GREEN for test")
-        sleep(1)
-        self.state = original_state
-        self.setLeds()
+        self.gpio_green.on()
+        self.gpio_red.on()
 
     # Static functiony goodness:
 
